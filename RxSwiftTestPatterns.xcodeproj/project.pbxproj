@@ -13,7 +13,12 @@
 		6D73E6AE2115864C00596958 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6D73E6AC2115864C00596958 /* Main.storyboard */; };
 		6D73E6B02115865100596958 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 6D73E6AF2115865100596958 /* Assets.xcassets */; };
 		6D73E6B32115865100596958 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6D73E6B12115865100596958 /* LaunchScreen.storyboard */; };
-		6D73E6BE2115865100596958 /* RxSwiftTestPatternsTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6D73E6BD2115865100596958 /* RxSwiftTestPatternsTests.swift */; };
+		6DE8BF662131086A0042914B /* BasicPatterns.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6DE8BF652131086A0042914B /* BasicPatterns.swift */; };
+		6DE8BF68213108AF0042914B /* Helpers.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6DE8BF67213108AF0042914B /* Helpers.swift */; };
+		6DE8BF6A213140000042914B /* UserService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6DE8BF69213140000042914B /* UserService.swift */; };
+		6DE8BF6E213147810042914B /* UserServiceSpec.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6DE8BF6D213147810042914B /* UserServiceSpec.swift */; };
+		6DE8BF7221314BA60042914B /* LoginViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6DE8BF7121314BA60042914B /* LoginViewModel.swift */; };
+		6DE8BF7421314D0C0042914B /* LoginViewModelSpec.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6DE8BF7321314D0C0042914B /* LoginViewModelSpec.swift */; };
 		AB311ED2C261F6B6CB6936AA /* Pods_RxSwiftTestPatterns.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B3950D3BD0A00F24BBB7750D /* Pods_RxSwiftTestPatterns.framework */; };
 /* End PBXBuildFile section */
 
@@ -37,8 +42,13 @@
 		6D73E6B22115865100596958 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		6D73E6B42115865100596958 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		6D73E6B92115865100596958 /* RxSwiftTestPatternsTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = RxSwiftTestPatternsTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		6D73E6BD2115865100596958 /* RxSwiftTestPatternsTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RxSwiftTestPatternsTests.swift; sourceTree = "<group>"; };
 		6D73E6BF2115865100596958 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		6DE8BF652131086A0042914B /* BasicPatterns.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BasicPatterns.swift; sourceTree = "<group>"; };
+		6DE8BF67213108AF0042914B /* Helpers.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Helpers.swift; sourceTree = "<group>"; };
+		6DE8BF69213140000042914B /* UserService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserService.swift; sourceTree = "<group>"; };
+		6DE8BF6D213147810042914B /* UserServiceSpec.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserServiceSpec.swift; sourceTree = "<group>"; };
+		6DE8BF7121314BA60042914B /* LoginViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewModel.swift; sourceTree = "<group>"; };
+		6DE8BF7321314D0C0042914B /* LoginViewModelSpec.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewModelSpec.swift; sourceTree = "<group>"; };
 		9D4295630F0A3FE759DBA9F4 /* Pods-RxSwiftTestPatterns.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RxSwiftTestPatterns.debug.xcconfig"; path = "Pods/Target Support Files/Pods-RxSwiftTestPatterns/Pods-RxSwiftTestPatterns.debug.xcconfig"; sourceTree = "<group>"; };
 		B3950D3BD0A00F24BBB7750D /* Pods_RxSwiftTestPatterns.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_RxSwiftTestPatterns.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		EBF61957B53A092D0964E197 /* Pods-RxSwiftTestPatternsTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RxSwiftTestPatternsTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-RxSwiftTestPatternsTests/Pods-RxSwiftTestPatternsTests.release.xcconfig"; sourceTree = "<group>"; };
@@ -89,12 +99,11 @@
 		6D73E6A72115864C00596958 /* RxSwiftTestPatterns */ = {
 			isa = PBXGroup;
 			children = (
-				6D73E6A82115864C00596958 /* AppDelegate.swift */,
-				6D73E6AA2115864C00596958 /* ViewController.swift */,
-				6D73E6AC2115864C00596958 /* Main.storyboard */,
 				6D73E6AF2115865100596958 /* Assets.xcassets */,
-				6D73E6B12115865100596958 /* LaunchScreen.storyboard */,
-				6D73E6B42115865100596958 /* Info.plist */,
+				6DE8BF7021314B2D0042914B /* Others */,
+				6DE8BF6C213141380042914B /* Storyboards */,
+				6DE8BF6B2131411D0042914B /* Supporting Files */,
+				6DE8BF6F21314B180042914B /* TestSubjects */,
 			);
 			path = RxSwiftTestPatterns;
 			sourceTree = "<group>";
@@ -102,10 +111,48 @@
 		6D73E6BC2115865100596958 /* RxSwiftTestPatternsTests */ = {
 			isa = PBXGroup;
 			children = (
-				6D73E6BD2115865100596958 /* RxSwiftTestPatternsTests.swift */,
+				6DE8BF652131086A0042914B /* BasicPatterns.swift */,
+				6DE8BF67213108AF0042914B /* Helpers.swift */,
+				6DE8BF7321314D0C0042914B /* LoginViewModelSpec.swift */,
+				6DE8BF6D213147810042914B /* UserServiceSpec.swift */,
 				6D73E6BF2115865100596958 /* Info.plist */,
 			);
 			path = RxSwiftTestPatternsTests;
+			sourceTree = "<group>";
+		};
+		6DE8BF6B2131411D0042914B /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				6D73E6B42115865100596958 /* Info.plist */,
+			);
+			path = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		6DE8BF6C213141380042914B /* Storyboards */ = {
+			isa = PBXGroup;
+			children = (
+				6D73E6B12115865100596958 /* LaunchScreen.storyboard */,
+				6D73E6AC2115864C00596958 /* Main.storyboard */,
+			);
+			path = Storyboards;
+			sourceTree = "<group>";
+		};
+		6DE8BF6F21314B180042914B /* TestSubjects */ = {
+			isa = PBXGroup;
+			children = (
+				6DE8BF7121314BA60042914B /* LoginViewModel.swift */,
+				6DE8BF69213140000042914B /* UserService.swift */,
+			);
+			path = TestSubjects;
+			sourceTree = "<group>";
+		};
+		6DE8BF7021314B2D0042914B /* Others */ = {
+			isa = PBXGroup;
+			children = (
+				6D73E6A82115864C00596958 /* AppDelegate.swift */,
+				6D73E6AA2115864C00596958 /* ViewController.swift */,
+			);
+			path = Others;
 			sourceTree = "<group>";
 		};
 		C2B5FC6BDC0B7BFFF68D4251 /* Frameworks */ = {
@@ -302,11 +349,13 @@
 			);
 			inputPaths = (
 				"${SRCROOT}/Pods/Target Support Files/Pods-RxSwiftTestPatterns/Pods-RxSwiftTestPatterns-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/Alamofire/Alamofire.framework",
 				"${BUILT_PRODUCTS_DIR}/RxCocoa/RxCocoa.framework",
 				"${BUILT_PRODUCTS_DIR}/RxSwift/RxSwift.framework",
 			);
 			name = "[CP] Embed Pods Frameworks";
 			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Alamofire.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/RxCocoa.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/RxSwift.framework",
 			);
@@ -323,6 +372,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				6D73E6AB2115864C00596958 /* ViewController.swift in Sources */,
+				6DE8BF6A213140000042914B /* UserService.swift in Sources */,
+				6DE8BF7221314BA60042914B /* LoginViewModel.swift in Sources */,
 				6D73E6A92115864C00596958 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -331,7 +382,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				6D73E6BE2115865100596958 /* RxSwiftTestPatternsTests.swift in Sources */,
+				6DE8BF68213108AF0042914B /* Helpers.swift in Sources */,
+				6DE8BF7421314D0C0042914B /* LoginViewModelSpec.swift in Sources */,
+				6DE8BF662131086A0042914B /* BasicPatterns.swift in Sources */,
+				6DE8BF6E213147810042914B /* UserServiceSpec.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -485,7 +539,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
-				INFOPLIST_FILE = RxSwiftTestPatterns/Info.plist;
+				INFOPLIST_FILE = "$(SRCROOT)/RxSwiftTestPatterns/Supporting Files/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -503,7 +557,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
-				INFOPLIST_FILE = RxSwiftTestPatterns/Info.plist;
+				INFOPLIST_FILE = "$(SRCROOT)/RxSwiftTestPatterns/Supporting Files/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",

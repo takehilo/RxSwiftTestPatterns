@@ -7,6 +7,7 @@ target 'RxSwiftTestPatterns' do
 
   pod 'RxSwift'
   pod 'RxCocoa'
+  pod 'Alamofire'
 
   target 'RxSwiftTestPatternsTests' do
     inherit! :search_paths
